@@ -1,98 +1,175 @@
-body, html {
-    background-image: url(img/earth-1149733_1920.jpg);
-    background-size: cover;
-    background-image: no-repeat;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    
-  
-  }
+body,
+html {
+  background-image: url(img/earth-1149733_1920.jpg);
+  background-size: cover;
+  background-image: no-repeat;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
   
 
-  
-  .container {
-      display: flex;
-      flex-direction: column;
-      line-height: 30px;
-      background-color: #111;
-      opacity: 0.9;
-    
+
+}
 
 
+#container-main {
  
-  }
+  line-height: 30px;
+  background-color: #111;
+  opacity: 0.9;
+  margin-top: 100px;
+  position: absolute;
+  padding-right: 120px;
+  width: 80%;
+  
+}
 
-  .inputRocket{
-    color: #fff;
-  }
+
+.container-main {
+  display: flex;
+  width: auto!important;
+  align-content: center;
+}
 
 
-  #players{
-    display: flex;
-    flex-direction: column;
-   
+.row{
+  margin-top: 30px;
+}
+
+#start-menu{
+  display: flex;
+  flex-direction: row;
+}
+
+.inputRocket {
+  color: #fff;
+  
+}
+
+#players {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  position: relative;
   
 
-  }
+}
 
-  #player{
-      margin: 15px;
-      
-  }
 
-  .btn{
-      height: 70px;
-      width: 130px;
-  }
 
-  #winner{
-    color: #fff;
-  }
-
-  #winner p{
-    color: #fff;
-    font-size: 40px;
-  }
-
-  #rocketTransition img{
-    width: 100px;
-    height: 100px;
-    animation: rocket 5s linear infinite;
-    transform: rotate(45deg);
-    position: absolute;
-    left: 150px;
-    
-    
-
-  }
-
-  @keyframes rocket  {
-    0%{ 
-       
-
-    }
-
-    20%{
-       left: 250px;
-
-    }
-
-    
-    50%{
-      left: 500px;
-      
+#player {
+  margin: 15px;
   
-     
+}
 
-   }
+.btn {
+  height: 70px;
+  width: 130px;
+  margin-left: 45%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+ 
+}
 
-   100%{
-    left: 1000px;
-   
-    
+#start{
+  margin: 15px 0 0 10px;
+  
+}
 
- }
+#winner {
+  color: #fff;
+  margin-left: 45%;
+
+}
+
+#winner p {
+  color: #fff;
+  font-size: 40px;
+
+  
+}
+
+.rocketTransition img{
+  width: 100px;
+  height: 100px;
+  transform: rotate(45deg);
+  position: absolute;
+ 
+  
+}
+
+.rocketTransition1 img{
+  animation: rocket1 .5s linear;
+  left: 25%;
+  
+}
+
+.rocketTransition2 img{
+
+  animation: rocket2 1s linear;
+  left: 50%;
+  
+ 
+}
+
+.rocketTransition3 img{
+  animation: rocket3 1s linear;
+  left: 75%
+}
+
+.rocketTransition4 img{
+  animation: rocket4 1s linear;
+  left: 100%;
+  
+}
 
 
+
+
+
+
+
+
+
+@keyframes rocket1 {
+  0% { left: 15%  ;
   }
+
+  100% {
+    left: 25%;
+  }
+}
+
+
+@keyframes rocket2 {
+  0% {  left: 25%;
+  }
+
+  100% {
+    left: 50%;
+  }
+}
+
+
+@keyframes rocket3 {
+  0% {  left: 50%;
+  }
+
+  100% {
+    left: 75%;
+  }
+}
+
+@keyframes rocket4 {
+  0% { left: 75%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+
+

@@ -20,25 +20,26 @@
 <body>
 
 
-    <div class="container">
-         <div id="container-rocket">
-             <div id="start-menu">
-        <input type="button" class="btn btn-dark" onclick="createRocket()" value="Jugador nou">
-        <input type="button" class="btn btn-dark d-none" onclick="start()" value="Comença" id="start">
-    </div>
-        <div id="start-propellers" class="d-none">
-        <input type="button" class="btn btn-dark" onclick="startPropellers()" value="Engega els coets">
-    </div>
-        <div class="inputRocket" id="inputRocket">   
-            <div id="players" class="sm-cols-12"></div>
-        </div>
-    </div>
-    <div id="container-winner" class="d-none">
-        <div id="winner" ></div>
-        <input type="button" class="btn btn-dark" onclick="playAgain()" value="Torna a jugar">
-    </div>
+    <div id="container-main" class="container-main">
+        <div id="container-rocket">
+            <div id="start-menu">
+                <input type="button" class="btn btn-dark" onclick="createRocket()" value="Afegir Jugador">
+                <input type="button" class="btn btn-dark d-none" onclick="start()" value="Comença" id="start">
+            </div>
+            <div id="start-propellers" class="d-none">
+                <input type="button" class="btn btn-dark" onclick="startPropellers()" value="Activar reactors">
+            </div>
+            <div class="inputRocket" id="inputRocket">
+                <div id="players" class="sm-cols-12"></div>
 
-    <div id="rocketTransition"><img src="../views/img/rocket-312767_640.png" alt=""></div>
+            </div>
+        </div>
+        <div id="container-winner" class="d-none">
+            <div id="winner"></div>
+            <input type="button" class="btn btn-dark" onclick="playAgain()" value="Torna a jugar">
+        </div>
+
+
     </div>
 
 
